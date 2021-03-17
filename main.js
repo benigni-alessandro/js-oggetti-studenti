@@ -5,31 +5,31 @@ $(document).ready(function(){
   }
   for (var i = 0; i < classe.length; i++) {
       console.log(classe[i].nome +' '+ classe[i].cognome);
-    }
+  }
     click_adj()
 });
 // studente con proprieta nome, cognome e età.
 var studente_1 = {
-  nome: 'Alessandro',
-  cognome: 'Benigni',
-  età: '20',
+  'nome': 'Alessandro',
+  'cognome': 'Benigni',
+  'età': '20',
 }
 
 var classe =[
   {
-    nome: 'Weston',
-    cognome: 'McKennie',
-    età: '20',
+    'nome': 'Weston',
+    'cognome': 'McKennie',
+    'età': '20',
   },
   {
-    nome: 'Paulo',
-    cognome: 'Dybala',
-    età: '27',
+    'nome': 'Paulo',
+    'cognome': 'Dybala',
+    'età': '27',
   },
   {
-    nome: 'Cristiano',
-    cognome: 'Ronaldo',
-    età: '36',
+    'nome': 'Cristiano',
+    'cognome': 'Ronaldo',
+    'età': '36',
   }
 ];
 // aggiungo uno studente
@@ -39,9 +39,9 @@ function click_adj() {
     var cognome = $('#cognome').val()
     var età = $('#eta').val()
     var studente ={
-      nome: nome,
-      cognome: cognome,
-      età: età,
+      'nome': nome,
+      'cognome': cognome,
+      'età': età,
     }
     console.log(studente);
     classe.push(studente);
